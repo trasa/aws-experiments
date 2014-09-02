@@ -17,6 +17,7 @@
         <mockito.version>1.9.5</mockito.version>
         <junit.version>4.10</junit.version>
         <amazonaws.version>1.8.9.1</amazonaws.version>
+        <amazonaws.ec.version>1.0.61.0</amazonaws.ec.version>
 
         <!-- Maven Plugin Versions -->
         <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
@@ -37,6 +38,7 @@
     </properties>
 
     <modules>
+        <module>ec-experiments</module>
     </modules>
 
 
@@ -102,6 +104,19 @@
     </build>
 
     <dependencies>
+
+        <!-- AWS -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>${amazonaws.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>elasticache-java-cluster-client</artifactId>
+            <version>${amazonaws.ec.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
