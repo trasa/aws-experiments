@@ -13,7 +13,7 @@
     <properties>
         <slf4j.version>1.7.5</slf4j.version>
         <logback.version>1.0.13</logback.version>
-        <guava.version>24.1.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <mockito.version>1.9.5</mockito.version>
         <junit.version>4.13.1</junit.version>
         <amazonaws.version>1.8.9.1</amazonaws.version>
